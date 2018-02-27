@@ -5,6 +5,14 @@ body {
   align-items: center;
   margin-top: 150px;
   background-color: #FFCDCD;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  margin-bottom: 15px;
+  border: 2px;
+  border-color: black;
+  border-style: dotted;
 }
 
 h1 {
@@ -27,15 +35,16 @@ h1 {
 
 input {
   margin-top: 10px;
+  height: 18px;
 }
 
 .addOption {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 button {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 4px 6px
+    padding: 5px 7px;
 }
