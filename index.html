@@ -1,4 +1,4 @@
-<!doctype html>
+ <!DOCTYPE html>
 <html lang=en>
   <head>
     <meta charset=utf-8>
@@ -7,14 +7,29 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
   <body>
-    <img src="C:\Users\Ida\Documents\IdaKodar2\help-me-choose\shrugging.png">
-    <h1>Help me choose between..</h1>
+    <div class="container">
+      <img src="C:\Users\Ida\Documents\IdaKodar2\help-me-choose\shrugging.png" alt "shrugging" class="image">
+        <div class="overlay">Can't decide today either?</div>
+      </div>
+
+    <h1>Help me choose what to eat between..</h1>
     <div class="inputSection">
     <div class="inputs">
-      <input placeholder="Something"></input>
+      <input placeholder="Add suggestion"></input>
     </div>
     <button class="addOption">Add</button>
   </div>
-    <button class="go">Go!</button>
+  <div class="resultSection"></div>
+    <button>Go!</button>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+        var add_option = function () {
+          $('.inputs').append('<input></input>')
+        }
+        $('.addOption').click(add_option)
+      })
+    </script>
   </body>
 </html>
