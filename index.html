@@ -11,7 +11,6 @@
       <img src="C:\Users\Ida\Documents\IdaKodar2\help-me-choose\shrugging.png" alt "shrugging" class="image">
         <div class="overlay">Can't decide today either?</div>
       </div>
-
     <h1>Help me choose what to eat between..</h1>
     <div class="inputSection">
     <div class="inputs">
@@ -20,16 +19,33 @@
     <button class="addOption">Add</button>
   </div>
   <div class="resultSection"></div>
-    <button>Go!</button>
+    <button class="submit">Go!</button>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
       $(function() {
         $('.resultSection').hide()
-        var add_option = function () {
+
+        var add_option = function() {
           $('.inputs').append('<input></input>')
         }
         $('.addOption').click(add_option)
+
+        var options = []
+        var submit = function() {
+          $('.inputSection').hide()
+          $('.resultSection').css('display', 'flex')
+          $('input').each(function() {
+            options.push($(this).val())
+          })
+          var winner = options[Math.floor(Math.random() * options.length)]
+          console.log(winner)
+          $('.resultSection').text(winner)
+        }
+
+        $('.submit').click(submit)
       })
+
     </script>
   </body>
 </html>

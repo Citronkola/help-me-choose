@@ -35,8 +35,6 @@ img {
   margin-bottom: 15px;
   margin-top: 15px;
   border: 2px;
-  border-color: black;
-  border-style: dotted;
 }
 
 h1 {
@@ -82,4 +80,13 @@ button:active {
   background-color: white;
   box-shadow: 0 1px #AAAAAA;
   transform: translateY(3px);
+}
+
+.resultSection {
+  height: 300px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
