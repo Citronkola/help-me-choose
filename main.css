@@ -8,6 +8,13 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+  font-weight: lighter;
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
 .container {
 position: relative;
 width:inherit;
