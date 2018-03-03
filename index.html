@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
   <body>
-    <h2>Need help?</h2>
+    <h1>Need help?</h1>
     <div class="container">
       <img src= "shrugging.png" alt "shrugging" class="image">
         <div class="overlay">Can't decide today either?</div>
       </div>
-    <h1>Let me help you choose between..</h1>
+    <h2 class="header">Let me help you choose between..</h2>
     <div class="inputSection">
     <div class="inputs">
       <input placeholder= "Add suggestion"></input>
@@ -34,6 +34,7 @@
         var submit = function() {
           $('.inputSection').hide()
           $('.resultSection').css('display', 'flex')
+          $('.header').text('and the winner is..')
           $('input').each(function() {
             options.push($(this).val())
           })

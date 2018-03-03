@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
-  background-color: #FFCDCD;
+  background-color: #FFB6B9;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -12,7 +12,7 @@ h2 {
   font-weight: lighter;
   font-size: 35px;
   letter-spacing: 2px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 }
 
 .container {
@@ -48,7 +48,7 @@ h1 {
   font-weight: lighter;
   font-size: 40px;
   letter-spacing: 2px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 .inputSection {
@@ -68,7 +68,7 @@ input {
 }
 
 .addOption {
-  margin-top: 14px;
+  margin-top: 18px;
 }
 
 button {
@@ -90,10 +90,15 @@ button:active {
 }
 
 .resultSection {
-  height: 300px;
+  margin-top: 100px;
+  margin-bottom: 120px;
+  height: 150px;
+  width: 200px;
   font-size: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #FAE3D9;
+  border-radius: 4px;
 
 }
